@@ -1,0 +1,283 @@
+/*******商品列表*******/
+.mulu{
+	width:100%;
+	height:50px;
+	background:#fff;
+}
+.breadcrumb {
+	width:1190px;
+	margin:0 auto;
+    color: #999;
+    line-height: 50px;
+    height: 50px;
+    font-family: "宋体",SimSun;
+}
+
+.brandSection {
+    width: 100%;
+    min-height:800px;_height:800px;
+    background: #fff;
+}
+.brandList {
+	width:1190px;
+    margin: 0 auto;
+}
+.brandContent{
+	width:1190px;
+	min-height:800px;_height:800px;
+}
+.brandList .searchList{ width:1190px;}
+.brandList .searchList .sort{ width:1190px;}
+.brandList .brandRight{ float:right;}
+.brandList .brandRight .sort{ height:40px; 
+	border:1px solid #dfdfdf; 
+	background:#f7f7f7; 
+	margin-bottom:13px;}
+	.brandList .brandRight .sort h6{float: left;
+	line-height: 40px;
+	padding-left: 10px; 
+	font-family:arial,'Hiragino Sans GB',"\5b8b\4f53",sans-serif; 
+	color:#222; 
+	font-size:15px; 
+	font-weight:bold;}
+.brandList .brandRight .sort h6 span{ font-family:arial,'Hiragino Sans GB',"\5b8b\4f53",sans-serif; 
+	color:#fc4f0a; 
+	font-size:15px; 
+	font-weight:bold;}
+.brandList .brandRight .sort h6 span a{ color:#fc4f0a;}
+.brandList .brandRight .sort h6 span a:hover{ text-decoration:underline;}
+.brandList .brandRight .sort p{ float:left; 
+	line-height:40px; 
+	text-indent:10px; 
+	color:#444444; 
+	font-size:12px;
+	_position:relative;
+	 _top:6px;}
+.brandList .brandRight .sort .sorting a{ display:inline-block; 
+	line-height:26px; 
+	height:26px; 
+	font-size:12px; 
+	color:#434343; 
+	background:#fff; 
+	padding:0 14px; 
+	border:1px solid #d2d2d2; 
+	margin-right:6px; 
+	text-align:center; 
+	text-indent:0;}
+.brandList .brandRight .sort .sorting a:hover,.brandList .brandRight .sort .sorting a.hover{ border:none; 
+	height:28px; 
+	background:#cc1d00; 
+	padding:0 15px; 
+	color:#fff; }
+.brandList .brandRight .sort .sorting a.pricea:hover{ border:none; 
+	height:28px; 
+	padding:0 15px; 
+	color:#fff; }
+.brandList .brandRight .sort .sorting a.pricea.hoverUp{ background:#cc1d00 url(../img/conlist.png) no-repeat 36px -98px; 
+	border:none; 
+	height:28px; 
+	padding:0 20px 0 10px; 
+	color:#fff; }
+.brandList .brandRight .sort .sorting a.pricea.hoverDown{ background:#cc1d00 url(../img/conlist.png) no-repeat -35px -98px; 
+	border:none; 
+	height:28px; 
+	padding:0 20px 0 10px; 
+	color:#fff; }
+.brandList .brandRight .sort .sorting a.time:hover{ border:none; 
+	height:28px; 
+	padding:0 15px; 
+	color:#fff; }
+.brandList .brandRight .sort .sorting a.time.hoverUp{ background:#cc1d00 url(../img/conlist.png) no-repeat 60px -98px; 
+	border:none; 
+	height:28px; 
+	padding:0 20px 0 10px; 
+	color:#fff; }
+.brandList .brandRight .sort .sorting a.time.hoverDown{ background:#cc1d00 url(../img/conlist.png) no-repeat -10px -98px; 
+	border:none; 
+	height:28px; 
+	padding:0 20px 0 10px; 
+	color:#fff; }
+.brandList .brandRight .sort .search .txt{ width:40px; 
+	height:20px;  
+	border:1px solid #ccc; 
+	text-align:center;}
+.brandList .brandRight .sort .search .srch{ width:55px; 
+	height:24px; 
+	border:none; 
+	background:#cc1d00; 
+	border:1px solid #9f0100; 
+	font-size:12px; 
+	color:#fff;}
+.brandList .brandRight .sort .totalp{ float:right; 
+	padding-right:10px; 
+	line-height:40px; 
+	font-size:12px; 
+	color:#444444;}
+.brandList .brandRight .sort .totalp span{ color:red;}
+.brandList .brandRight .sort .totalp input{ position:relative; top:2px;}
+
+.brandList .searchList .result{ width:1190px;}
+.brandList .searchList .result li{ width:236px;}
+.result{ padding-top:0px;}
+.result li{ float:left; 
+	width:238px; 
+	height:277px; 
+	margin-bottom:25px; 
+	border:1px solid #fff;  
+	border-bottom:2px solid #fff;
+	padding-top:10px; 
+	position:relative;}
+.result li a{display:block;}
+.result li .ass{ width:238px; 
+	text-align:center;}
+.result li .pic_tb {position: absolute;
+	width: 66px;
+	height: 66px;
+	top: 20px;
+	right: 20px;
+	z-index: 1;}
+.result li .pica{ display:block; 
+	width:180px; 
+	height:180px; 
+	margin:0 auto; 
+	margin-bottom:5px;}
+.result li .pica img{ width:180px; 
+	height:180px;}
+.result li p{ line-height:16px; 
+	width:185px; 
+	height:32px; 
+	overflow:hidden; 
+	margin:0 auto;}
+.result li p a{ font-size:12px; 
+	color:#444444; 
+	line-height:16px;}
+.result li p a:hover{ color:#ce110f;}
+.result li span{font-size:12px; 
+	line-height:22px; 
+	color:#999999; 
+	text-decoration:line-through; 
+	padding-left:5px;}
+.result li em{ font-style:normal;
+	background:#f48200; 
+	border-radius:3px; 
+	padding:2px 5px; 
+	color:#fff; 
+	position:relative; 
+	right:-30px; 
+	top:-2px;
+	font-family:"宋体";}
+.result li strong{ font-size:16px; 
+	line-height:26px; 
+	color:#c91f00; 
+	font-family:Verdana, Geneva, sans-serif; 
+	padding-left:29px;}
+li .iConpos{ position:absolute; 
+	left:0px; 
+	top:0px;}
+li .iConpos>div{width:63px;
+	height:24px;
+	background-image:url(../img/quanqiugou.png); 
+	background-repeat:  no-repeat ; 
+	margin-top: 5px;}
+.result li div input{ height:24px; 
+	border:none; 
+	cursor:pointer;}
+.result li .addCar{ width:94px; background:url(../img/conlist.png) -182px 0px no-repeat; 
+	margin-right:20px;}
+.result li:hover{ border-color:#d2d2d2; 
+border-bottom-color:#cb1e00;}
+.result li .ass span{ display:inline-block; 
+	border:1px solid #b5dbf1; 
+	height:24px; 
+	line-height:24px; 
+	text-align:center; 
+	color:#4693c1; 
+	text-decoration:none; 
+	padding:0px 10px; 
+	margin-top:5px; 
+	font-family:"宋体"; 
+	width:70px;}
+.result li .btn{ position:absolute; 
+	bottom:0px; 
+	background:#fff; 
+	display:none; 
+	width:100%;}
+.dress li .btn{ height:34px; 
+	background:#eee;}
+.dress li .btn span{ width: 154px;
+	display: inline-block;
+	text-align:left; 
+	height:30px; 
+	overflow:hidden; 
+	vertical-align:middle; 
+	line-height:33px; 
+	padding-left:26px; 
+	color: #444;
+	text-decoration:none; 
+	vertical-align:middle;} 
+.result li .btn input{ background:url(../img/assBtn.png) no-repeat; 
+	width:119px; 
+	height:30px;  
+	color: #fff; 
+	padding-left: 20px;
+	font-family:"宋体"; 
+	margin-left:26px;}
+.result li .btn input.off{ background-position:0px -40px; color:#999;}
+.result li .btn a{background:url(../img/scPng.png) no-repeat 0px -75px;
+	padding-left:15px;
+	display:inline-block;} 
+.result .actBox{ position: relative; 
+	top:0px; 
+	background:none; 
+	margin-top: 5px;}
+.result .actBox img{ width: 50px;}
+.page{ height:32px; 
+	text-align:right;font-family: "宋体",SimSun;
+	 margin:20px 0px; }
+.page a{ display:inline-block; 
+	height:30px; 
+	line-height:30px; 
+	padding:0 10px; 
+	border:1px solid #dedede; 
+	font-size:12px; 
+	color:#5e5e5e; 
+	margin-right:2px; 
+	background:#fff;}
+.page a.none{ color:#ccc; 
+	background:#f8f8f8; 
+	cursor:default;}
+.page a.has{ border-color:#cc1d00; 
+	color:#fff; 
+	background:#cc1d00; 
+	cursor:pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

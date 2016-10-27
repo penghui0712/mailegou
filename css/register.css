@@ -1,0 +1,271 @@
+/*******logo*******/
+.regTop{
+	width:100%;
+	height:110px;
+	background:#fff;
+}
+.regTop1{
+	width: 1000px;
+	height:110px;
+	margin:0 auto;
+}
+.Logo{
+	padding-top: 20px;
+}
+.Logo img{
+	width:260px;
+	height:83px;
+	border:none;
+	display:inline-block;
+	float: left;
+	}
+.Logo1{
+	padding-top: 25px;
+}
+.Logo1 img{
+	width:502px;
+	height:44px;
+	border:none;
+	display:inline-block;
+	float:right;
+	}
+/*******注册框*******/
+.regTop{ border-bottom:none;}
+.regMain{ min-height:600px; 
+	width:960px; 
+	margin:0px auto;}
+.regMain.w100b{width: 100%;}
+.regLeft{ float:left; 
+	width:508px; 
+	padding-top:30px;}
+.regMain a{ color:#999; 
+	text-decoration:none;}
+.regMain a:hover{ color:#128cff;}
+.regMain .regRight{border:#ccc 1px solid; 
+	border-top:#ea3918 2px solid; 
+	width:290px; 
+	float:right; 
+	margin-right:80px; 
+	margin-top:30px; 
+	padding:20px 40px;}
+.regMain .regRight h3{float:left; 
+	font-size:22px; 
+	color:#444; 
+	font-weight:normal; 
+	position:relative;}
+.regMain .regRight h3 span{ display:block; 
+	position:absolute;  
+	top: -35px;
+	left: 0px;}
+
+.regMain .regRight span.rR{float:right; 
+	display:block; 
+	line-height:24px; 
+	width:160px; 
+	text-align:right;}
+.regMain .regRight ul{margin-top:40px;}
+.regMain .regRight li.liLab{ position:relative;}
+.regMain .regRight li.liLab label.user{  position: absolute;
+	text-indent: -9999px;
+	top: 0px;
+	left: 0px;
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: url(../img/tegPng.png) no-repeat 0px -52px;}
+.regMain .regRight li input{ border:1px solid #dedede; 
+	color:#999; 
+	font-size:14px; 
+	height:30px; 
+	line-height:30px;}
+.regMain .regRight li input.user{ padding-left:40px; 
+	width:240px;}
+.regMain .regRight li p.focusTex{ line-height:24px;
+	color:#ff6b52; 
+	height:24px;}
+.regMain .regRight li.liLab label.pass{  position: absolute;
+	text-indent: -9999px;
+	top: 0px;
+	left: 0px;
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: url(../img/tegPng.png) no-repeat;}
+.regMain .regRight li input.pass{ padding-left:40px; 
+	width:240px;}
+.regMain .regRight li input.code{ width:80px; 
+	padding-left:8px;}
+.regMain .regRight li em{  
+	width:15px; 
+	height:14px; 
+	vertical-align:middle; 
+	margin:0px 5px;
+	background:url(../img/tegPng.png) no-repeat;}
+.regMain .regRight li em.yes{background-position: 0px -111px; }
+.regMain .regRight li em.error{background-position: 0px -132px; }
+.regMain .regRight li input.check{height: auto;
+	vertical-align: middle;
+	margin-right: 5px;}
+.regMain .regRight li input.btn{ background-color:#e83917; 
+	width: 290px;
+	margin-top: 5px;
+	color: #fff;
+	font-size: 22px; 
+	height:40px; 
+	line-height:40px; 
+	border:none;
+	border-radius: 3px; 
+	cursor:pointer;}
+.regMain .regRight li input.gary{background-color:#ccc;}
+.regMain .regRight li p.otherReg{ padding-top:20px;color:#999;}
+.regMain .regRight li p.otherReg a{  
+	width:20px; 
+	height:20px; 
+	text-indent:-9999px;
+	display: inline-block;
+	vertical-align: middle; 
+	margin:0px 6px;
+	background:url(../image/tegPng.png) no-repeat;}
+.regMain .regRight li p.otherReg a.qq{ background-position: -26px -128px;}
+.regMain .regRight li p.otherReg a.sina{ background-position: -66px -128px;}
+.regMain .regRight li p.otherReg a.aliPay{ background-position: -106px -128px;}
+.regMain .regRight li p.otherReg a.ws360{ background-position: -147px -382px;}
+.voiceVer{text-align: center; 
+	padding:20px 0 12px 0;}
+.voiceVer .blue{color: #128cff;}
+.voiceVer .voiceBox{text-align:left; 
+	margin-top:20px; 
+	padding:15px 18px; 
+	border: 1px solid #dedede;}
+.voiceVer .voiceBox p{line-height: 25px; 
+	font-family: "microsoft yahei";}
+.voiceVer .voiceBox p.tele{color: #e83917;}
+.voiceVer .voiceBox p.tele i{display: block;
+	float: left; 
+	width: 16px; 
+	height: 14px; 
+	margin-top:5px; 
+	margin-right: 10px;
+	background:url(../image/teleIco.png) no-repeat scroll center center; }
+
+.regRight .regCho{ margin-top:10px; 
+	width:100%; 
+	height:30px; }
+.regRight .regCho .nCard{ float:left; 
+	width:50%; 
+	text-align:center;
+	height:35px; 
+	line-height:35px; 
+	font-size:14px; 
+	color:#999; 
+	cursor:pointer;
+	background:url(../image/regCho.png) no-repeat 0px -55px; }
+
+.regRight .regCho .hover{color:#e83917; 
+	background:url(../img/regCho.png) no-repeat;}
+
+.regMain .regRight li input.public{ width:278px; 
+	padding:0px 5px;}
+
+.regMain .regRight li a.sms{  width: 110px; 
+	height: 30px;
+	border:1px solid #ccc; 
+	background:#eee;
+	display: inline-block;
+	line-height: 30px; 
+	text-align: center;
+	color: #444;
+	font-size: 12px;}
+
+.regMain .regRight li .babyTit{border:1px solid #dedede; 
+	color:#999; 
+	font-size:14px; 
+	height:30px; 
+	line-height:30px; 
+	text-align:center; 
+	display:inline-block; 
+	width:108px; 
+	cursor:pointer;}
+.regMain .regRight li span.babyNote{ display:inline-block; 
+	vertical-align:middle; 
+	margin-left:10px; 
+	color:#999; }
+.regMain .regRight li .babyBox{border:1px solid #dedede; 
+	color:#999; 
+	width:260px; 
+	padding:15px; 
+	position:relative; 
+	top:-1px; 
+	padding-bottom:0px; 
+	display:none;}
+.regMain .regRight li .babyBox div{ margin-bottom:12px;}
+.regMain .regRight li .babyBox label{ vertical-align:middle; 
+	display:inline-block; 
+	width:100px; 
+	text-align:right; 
+	font-size:12px; 
+	color:#444;}
+.regMain .regRight li .babyBox input{ display:inline-block; 
+	width:140px; 
+	height:30px; 
+	line-height:30px; 
+	padding:0px 5px; 
+	font-size:12px;}
+.regMain .regRight li .babyBox input.radio{ width:auto; 
+	height:auto; 
+	line-height:none; 
+	padding:0px; 
+	vertical-align:middle;
+	 margin-left:6px;}
+
+.last{
+	width:100%;
+	height:132px;
+	background:#fff;
+}
+.last1{
+	width:100%;
+	height:132px;	
+}
+.last1 .about { background:#fff; 
+	padding-bottom:15px;}
+.last1 .about p{ text-align: center; 
+	line-height: 24px;}
+.last1 .about p.abLink{ height: 35px; 
+	line-height: 35px; 
+	background: #444851; 
+	overflow: hidden;}
+.last1 .about p.abLink a{ color: #adadad; 
+	padding:0 17px;
+	display:inline-block;} 
+.last1 .about p.abLink a:hover{color: #F5F5F5; 
+	transition: .5s linear; 
+	-webkit-transition: .5s linear; 
+	-moz-transition: .5s linear; 
+	-ms-transition: .5s linear;}
+.last1 .about p.abLink span{ color: #555;}
+
+.last1 .newcor{ width:990px; 
+	height:62px; 
+	margin:0 auto; 
+	padding-top:21px; 
+	text-align:center; 
+	overflow: hidden;}
+.last1 .newcor a img{ display:inline-block; 
+	border: 1px solid #ccc;  
+	height:60px; 
+	width:112px; 
+	margin:0 3px;}
+
+
+
+
+
+
+
+
+
+
+
+
+

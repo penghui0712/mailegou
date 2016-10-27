@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/shopping cart.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/home page.js"></script>
+		<script>
+		//二级菜单
+			$(function(){
+				var menu=$(".menuBox")
+				var ul=$("nav .nav-list")
+				var li=$("nav .nav-list li")
+				var sub=li.find(".sub-pannel")
+				ul.css("display","none")
+				menu.mouseenter(function(){
+					ul.css("display","block")
+				})
+				menu.mouseleave(function(){
+					ul.css("display","none")
+				})
+				li.mouseover(function(){
+					$(this).addClass("nav-hover")	
+					sub.eq($(this).index()).css("display","block").stop().animate({"opacity":0.96,"left":180})
+				})
+				li.mouseleave(function(){
+					$(this).removeClass("nav-hover")
+					sub.eq($(this).index()).css("display","none").stop().animate({"opacity":0.5,"left":170})
+				})
+			})
+			$(function(){
+				$("nav .nav-list li .sub-pannel .nelBox p a").hover(function(){
+					$(this).addClass("on2")
+				},function(){
+					$("nav .nav-list li .sub-pannel .nelBox p a").removeClass("on2")
+				})
+			})
+			//购物车
+			$(function(){
+				var cookieUntil = {
+				//添加cookie                                                          
+					setCookie: function(name, value, time) {
+						//console.log(name,value)
+						var date = new Date();
+						date.setDate(date.getDate() + time); //设置date的天为现在加上间隔
+						document.cookie = name + "=" + value + ";expires=" + date;
+					},
+				
+					//删除cookie
+					removeCookie: function(name) {
+						this.setCookie(name, 1, -1); //设置cookie过期，则该条cookie被删除
+					},
+				
+					//获取cookie的值
+					getCookie: function(name) {
+						var str = document.cookie;
+						var arr = str.split("; "); //分割成 key1=value1; key2=value2; key3=value3 
+						for (var i = 0; i < arr.length; i++) { //遍历每个键值对
+							var arr1 = arr[i].split("="); //得到存储键值对的数组  [key,value]
+							if (arr1[0] == name) { //找到则返回对应的值
+								return arr1[1];
+							}
+						}
+						return ""; //找不到，返回空值
+					}
+				};
+				var information=JSON.parse(cookieUntil.getCookie("xiaoming"));
+				var number=cookieUntil.getCookie("num")
+					console.log(information.src);
+				$("#tt").clone(true).appendTo("tbody");
+				var c=$("tbody").find("tr").last();
+				c.find("#picture").find("img").attr("src",information.src)
+				c.find("#did").eq(1).find("span").text(information.title1)
+				c.find(".does").text(information.title2)
+				c.find(".tag").find("span").eq(0).text(information.neprice)
+				c.find(".tag").find("span").eq(1).text(information.oldprice)
+				c.find(".red").text(information.allprice)
+				$("tbody #del").eq(0).click(function(){
+					$("tbody #tt").eq(0).css("display","none")
+					
+				})
+				$("tbody #del").eq(1).click(function(){
+					$("tbody #tt").eq(1).css("display","none")
+					console.log("a")
+				})
+
+				
+	
+			})
+		</script>
+	</head>
+	<body>
+		<!-------顶部收缩后的小广告------->
+		<div class="aTop">
+			<div class="bTop">
+				<a><img src="img/1.jpg"></a>
+				<span id="btnDown" style="display:none">展开</span>
+				<span id="btnHide">关闭</span>	
+			</div>
+		</div>
+		<!-------顶部主体------->
+		<section class="top-main">   <!--HTML 5 中的新标签,标签定义文档中的节（section、区段）。比如章节、页眉、页脚或文档中的其他部分-->
+			<div class="site-top">
+				<div class="article">
+					<div class="fl" id="DivUserStatus">       
+						<p class="fl">
+		 	  				<span><a href="#"><i class="iconfont">&#x3437;</i>麦乐购首页</a></span>
+		 	  				<span><a href="register.html">请登录</a></span>
+		 	  				<span><a class="red" href="landing.html">免费注册</a></span>
+		 	 			</p>
+		   				<p class="fl otherlog">
+		   					<span>其它登录方式：</span>
+							<a title="使用QQ账号登录" href="#" class="qq"></a>
+							<a title="使用360联盟帐号登录" href="#" class="aq360"></a>
+							<a title="新浪微博登录" href="#" class="sina"></a>
+		 				</p>
+						<p class="fl forSer"><span>联系客服:</span><span class="red">400-666-6600</span></p>
+	                </div>
+					<div class="fr">
+						<div class="rg">
+							<div class="mygou">
+								<a href="#">我的麦乐购</a>
+								<i>&nbsp;</i>
+								<ul class="noneCon">
+									<li><a href="#">我的订单</a></li>
+									<li><a href="#">我的账户</a></li>
+									<li><a href="#">麦豆兑换</a></li>
+									<li><a href="#">我的优惠券</a></li>
+									<li><a href="#">我的收藏</a></li>
+									<li><a href="#">幸运刮刮卡</a></li>
+									<!--<li><a href="#">商品溯源查询</a></li>-->
+								</ul>
+							</div><span>|</span>					
+							<div><i class="front icoll"></i><a href="#">收藏麦乐购</a></div><span>|</span>
+							<div><a href="#">药品信息</a></div><span>|</span>
+							<div><a href="#">音乐专区</a></div><span>|</span>
+							<div><a href="#">妈妈赚钱计划</a></div><span>|</span>
+							<div class="mygou">
+								<i class="front iphone"></i>
+								<a href="#">手机麦乐购</a>
+								<div class="noneCon"><img src="img/3.jpg"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-------商品------->
+		<div class="settleTop">
+		    <div class="settleTopMain">
+		        <div class="m6goLogo">
+		            <a href="mailegou-home page.html" title="麦乐购">
+		                <img src="img/logo 1.gif" width="260" height="83">
+		            </a>
+		            <div class="stepCarNew">
+		                <ul>
+		                    <li id="stepCar_1_1" class="hover" style="display:none;"><p>1</p><span>选定商品</span></li>
+		                    <li id="stepCar_1_2" class="hover"><p>1</p><span>我的购物车</span></li>
+		                    <li id="stepCar_2"><p>2</p><span>订单确认</span></li>
+		                    <li id="stepCar_3"><p>3</p><span>付款</span></li>
+		                    <li id="stepCar_4"><p>4</p><span>购买完成</span></li>
+		                </ul>
+		            </div>
+		            <div class="clear"></div>
+		        </div>
+		    </div>
+		</div>
+		<div class="carEgDiv">
+		    <span>主人,我已经在购物车里了,快点把我带走吧!</span>
+		</div>
+		<div class="settleMain">
+		    <h4>购物车</h4>
+		    <form id="CartWindow"><div class="settleCont">
+		        <p class="allCho"><input type="checkbox" checked="" name="qx"> 全选 </p>       	
+		        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabListSettle">
+		            <thead>
+		                <tr>
+		                    <td width="50%" data-merchantid="0">
+		                        <input type="checkbox" checked="" name="">
+		                                                                                            由麦乐购发货                                                            
+		                    </td>
+		                    <td width="15%" align="center">单价</td>
+		                    <td width="15%" align="center">数量</td>
+		                    <td width="10%" align="center">小计</td>
+		                    <td width="10%" align="center">操作</td>
+		                </tr>
+		            </thead>
+		            <tbody>
+		                <tr>
+		                    <td colspan="5" class="saleTd">
+		                        <div>
+		                            <em>包邮</em>                                                                                                      
+		                                                                                            满188元，全场包邮（纸尿裤除外）                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+		                        </div>  
+		                    </td>
+		                </tr>               
+		                <tr>
+		                    <td colspan="5" class="listTd">                                       
+		                        <ul>                                           
+		                        </ul>
+		                    </td>
+		                </tr>            
+		                <tr id="tt">
+		                    <td>
+		                        <div class="divGoods">
+		                            <input type="checkbox" name="cbxGoodsId" checked="" value="3472:5241:0">
+		                        </div>
+		                        <div class="divGoods">
+		                            <p>    
+		                                <a id="picture" href="/" target="_blank">
+		                                <img src="img/300.jpg" alt="【有机更安全】德国喜宝Hipp有机奶粉 pre段（0-6个月）600g">
+		                              	</a>                                     
+		                            </p>
+		                        </div>
+		                        <div class="divGoods">
+		                            <p class="p1 car">
+		                                <a id="did" href="/" target="_blank">                               
+		                                <font color="red"></font>                                            
+		                                <font color="red"></font>
+		                                <span>【有机更安全】德国喜宝Hipp有机奶粉 pre段（0-6个月）600g（海外版）</span>                                             
+		                              	</a>
+		                            </p>
+		                            <p class="p2 does">段位：新生儿奶粉（0-6个月），规格：600g，包装：盒</p>
+		                        </div>
+		                    </td>
+		                    <td class="tag" valign="middle" align="center">
+		                        <i>特卖</i>                                     
+		                        <span>￥139.00</span>
+		                        <span class="gray">￥199.00</span>
+		                    </td>
+		                    <td valign="middle" align="center">
+		                        <a class="sum" href="javascript:void(0);" title="减一">-</a>
+		                        <input type="text" class="sum" id="btn_cha" name="txtChange" style="width:30px" value="1">
+		                        <a class="sum" href="javascript:void(0);" title="加一">+</a>
+		                    </td>                                      
+		                    <td valign="middle" align="center">                                     
+		                        <span class="red">￥139.00</span>
+		                    </td>
+		                    <td valign="middle" align="center">
+		                        <a id="del" style="cursor: pointer;">删除</a>
+		                    </td>
+		                </tr>     
+		                
+		            </tbody>
+		            <tfoot>            
+		                <tr>
+		                    <td colspan="10">
+		                        <div class="car_ps" style="display:none;">
+		                        温馨提示：根据海关规定，保税区内跨境直邮商品单次购买价值不可超过1000元人民币，并且需要提交个人身份信息以备海关审核，感谢您的配合。
+		                        </div>
+		                    </td>
+		                </tr>                        
+		                <tr>
+		                    <td></td>
+		                </tr>
+		                <tr id="promotionContainer"></tr>
+		            </tfoot>
+		        </table>               
+		        <div class="carAccount">
+		    		<div class="carAccountMain">
+			            <div class="accountL">
+			                <span><input type="checkbox" checked="" name="qx">全选</span>
+			                <span><a id="Submit1" onclick="if( confirm('确认要清空购物车吗？')==true) ClearCart();">清空购物车</a></span>		                    
+			                <span><a href="/">继续购物</a></span>			                      		                    
+			            </div>
+			            <div class="accountR">
+			                <span>获得麦豆：<strong>7</strong></span>			                        			                    
+			                <span>
+				                <span id="subGoodsCount_span" style=" display:none;">2</span>
+				                <span style="display:none">0&lt;149.00&gt;</span>
+				                为您节省：<i>￥149.00</i>（<span style="display:none">0</span>不含邮费）
+			                </span>
+			                <span>			                  
+			                    <i>2</i>件商品总计：
+			                    <em>￥
+			                    <span style="display:none">0&lt;139.00&gt;</span>
+			                    139.00 
+			                    </em>
+			                </span>
+			                <input type="button" onclick="gotoCheckLogin();" id="A1" class="accountBtn" value="去结算">
+			            </div>
+		    		</div>
+				</div>
+				</div>
+			</form>
+		</div>
+		<!-------尾部------->
+		<footer id="footer">
+			<div class="footer">
+				<div class="promise mtop30">
+					<div class="article">
+						<dl class="pro1"><span class="i1"></span><dt>海外采购</dt><dd>精选海外优质品牌</dd></dl>
+						<dl class="pro2"><span class="i2"></span><dt>国内外三重检疫</dt><dd>严把质量关 无忧购物</dd></dl>
+						<dl class="pro2"><span class="i3"></span><dt>中华保险承保</dt><dd>正品保证</dd></dl>
+						<dl class="pro2"><span class="i4"></span><dt>专属育婴师服务</dt><dd>一对一专业育婴指导</dd></dl>
+						<dl class="pro3"><span class="i5"></span><dt>满188元包邮</dt><dd>尊享免费航空快递</dd></dl>
+					</div>
+				</div>
+				<div class="article">
+					<div class="forLink">
+						<dl>
+							<dt>购物指南</dt>
+							<dd><a href="javascript:void(0)">为什么选麦乐购</a></dd>
+							<dd><a href="javascript:void(0)">购物流程</a></dd>
+							<dd><a href="javascript:void(0)">正品保证</a></dd>
+							<dd><a href="javascript:void(0)">手机麦乐购</a></dd>
+						</dl>
+						<dl>
+							<dt>配送方式</dt>
+							<dd><a href="javascript:void(0)">跨境电商介绍</a></dd>
+							<dd><a href="javascript:void(0)">报关说明</a></dd>
+							<dd><a href="javascript:void(0)">配送说明</a></dd>
+							<dd><a href="javascript:void(0)">国际快递查询</a></dd>
+							<dd><a href="javascript:void(0)">国内快递查询</a></dd>
+						</dl>
+						<dl>
+							<dt>支付方式</dt>
+							<dd><a href="javascript:void(0)">支付方式介绍</a></dd>
+							<dd><a href="javascript:void(0)">优惠券支付</a></dd>
+							<dd><a href="javascript:void(0)">余额支付</a></dd>
+						</dl>
+						<dl>
+							<dt>售后服务</dt>
+							<dd><a href="javascript:void(0)">联系客服</a></dd>
+							<dd><a href="javascript:void(0)">验货签收</a></dd>
+							<dd><a href="javascript:void(0)">退换货政策</a></dd>
+							<dd><a href="javascript:void(0)">退款说明</a></dd>
+							<dd><a href="javascript:void(0)">关于发票</a></dd>
+						</dl>
+						<dl>
+							<dt>特色服务</dt>
+							<dd><a href="javascript:void(0)">麦豆说明</a></dd>
+							<dd><a href="javascript:void(0)">会员级别</a></dd>
+							<dd><a href="javascript:void(0)">商务会员卡</a></dd>
+							<dd><a href="javascript:void(0)">VIP会员尊享卡</a></dd>
+							<dd><a href="javascript:void(0)">妈妈赚钱计划</a></dd>
+						</dl>
+						<div class="gouApp">
+							<h3>手机麦乐购</h3>
+							<img src="img/l1VomIKv7-mJ5PZACAjipM.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="about">
+					<p class="abLink">
+						<a href="javascript:void(0)">关于麦乐购</a>
+						<span>|</span>
+						<a href="javascript:void(0)">保税店专区</a>
+						<span>|</span>
+						<a href="javascript:void(0)">服务条款</a>
+						<span>|</span>
+						<a href="javascript:void(0)">商户合作</a>
+						<span>|</span>
+						<a href="javascript:void(0)">O2O合作</a>
+						<span>|</span>
+						<a href="javascript:void(0)">联系我们</a>
+						<span>|</span>
+						<a href="javascript:void(0)">友情链接</a>
+						<span>|</span>
+						<a href="javascript:void(0)">诚聘英才</a>
+						<span>|</span>
+						<a href="javascript:void(0)">手机麦乐购</a>
+						<span>|</span>
+						<a href="javascript:void(0)">意见建议</a>
+						<span>|</span>
+						<a href="javascript:void(0)">媒体报道</a>
+					</p>
+					<p style="margin-top: 10px;"><a href="javascript:void(0)">京公网安备：11010102000812号</a>  | 中华保险保单号：021544019311050D000004 | 中华人民共和国出版物经营许可证编号：150023 | 广电制作经营许可证：(京)字第06356号</p>
+					<p>食品经营许可证编号：JY11101070034785 | 食品卫生许可证编号：110101_JX0020 | 乳制品(含婴幼儿配方乳粉)销售资质 | 互联网药品信息服务证书编号：(京)-2016-0095</p>
+					<p>Copyright 2006 - 2016 北京麦乐购科技有限公司版权所有 |  营业执照：911101010672694772 |  京ICP备14022296号 | 中国服务热线：400-666-6600</p>
+					<aside class="newcor">
+						<a href="javascript:void(0)"><img src="img/3MPaaIF3F4AZaApyUC80c7.png"></a>
+						<a href="javascript:void(0)"><img src="img/g_d0e_tJA-EPKNXBrwHZPx.jpg"></a>
+						<a href="javascript:void(0)"><img src="img/orubbcRtdkilHypd4JgfpB.jpg"></a>
+						<a href="javascript:void(0)"><img src="img/3-IbApJlBOMZ7N-xxrVBY-.jpg"></a>
+						<a href="javascript:void(0)"><img src="img/_-chcjKD7Oe3M14qJ01wRt.jpg"></a>
+					</aside>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

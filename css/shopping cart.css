@@ -1,0 +1,259 @@
+
+.settleTopMain .stepCarNew{ float:right; 
+	margin-top:25px;}
+.settleTopMain .stepCarNew li{ float:left; 
+	width:150px; 
+	text-align:center;}
+.settleTopMain .stepCarNew li p{ background:url(../img/car518step.png) no-repeat; 
+	width:150px; 
+	height:30px; 
+	text-align:center; 
+	font-family:Verdana, Geneva, sans-serif; 
+	font-size:15px; 
+	font-weight:bold; 
+	color:#fff; 
+	line-height:30px;}
+.settleTopMain .stepCarNew li.hover p{ background:url(../img/car518step.png) no-repeat 0px -40px; }
+.settleTopMain .stepCarNew li span{ color:#999; 
+	line-height:20px; 
+	font-family:'microsoft yahei',Verdana,Arial,Helvetica,sans-serif; 
+	font-size:15px;}
+.settleTopMain .stepCarNew li.hover span{ color:#cf2e13;}
+
+.carEgDiv {
+    width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+}
+.carEgDiv span{ background:url(../img/egDiv.png) no-repeat left; 
+	height:31px; 
+	line-height:31px;
+	padding-left:45px; 
+	color:#f53900; 
+	font-size:20px; 
+	font-family:Microsoft Yahei,"微软雅黑"; 
+	display:inline-block; }
+.minHeight{ min-height:500px;}
+
+.settleTop{ width:100%; 
+	height:110px; 
+	border-bottom:1px solid #d10000;}
+.settleTopMain{ width:1000px; 
+	margin:0 auto;}
+.settleTopMain .m6goLogo{ padding-top:20px;}
+.settleTopMain .m6goLogo img{ float:left;}
+.settleTopMain .stepCar{ float:right; 
+	margin-top:25px;}
+.settleTopMain .stepCar li{width: 128px;
+	height: 35px;
+	background-image: url(../img/settlePic.gif);
+	background-position: 0px -36px;
+	float: left;
+	margin-left: 3px;
+	font-family: arial,Microsoft Yahei;
+	font-size: 16px;
+	text-align: center;
+	line-height: 35px;
+	color: #999;
+	font-weight: bold;}
+.settleTopMain .stepCar li.car_now{background-image: url(../img/settlePic.gif);
+	background-position: 0px 0px;
+	color: #fff;}
+.settleMain{ width:1000px; 
+	margin:0 auto; 
+	border:1px solid #c97070; 
+	margin-top:20px;}
+.settleMain a{ color:#0064ed; 
+	font-size:12px; 
+	text-decoration:none; 
+	font-weight:normal;}
+.settleMain a:hover{ text-decoration:none;}
+.settleMain a.carEmpty{ width:427px; 
+	display:block; 
+	margin:20px auto;}
+.settleMain h4{ background:#c97070; 
+	height:28px; 
+	line-height:28px; 
+	padding-left:15px; 
+	color:#fff; 
+	font-size:16px; 
+	font-weight:bold; 
+	font-family:Microsoft Yahei,"微软雅黑";}
+.settleMain .settleCont{ padding:20px;}
+.settleMain .settleCont h5{ font-size:14px; 
+	color:#333; 
+	font-weight:bold; 
+	position:relative;}
+.settleMain .settleCont h5 a{ margin-left:15px;}
+.settleMain .settleCont h5 a.back{ float:right;}
+.settleMain .settleCont h5 .notesWin{ border:1px solid #eee; 
+	padding:5px; 
+	position:absolute; 
+	color:#c97070; 
+	line-height:16px; 
+	font-size:12px; 
+	font-weight:normal; 
+	top:-25px; 
+	left:166px; 
+	display:none;}
+.settleMain .settleCont h5 .subtxt{font-size: 12px; 
+	color: #999999; 
+	font-weight:400; 
+	padding-left: 10px;}
+.settleMain .settleCont .contDiv{ margin:15px 0 30px 30px;}
+.settleMain .settleCont .contDiv p{ color:#444; 
+	line-height:20px;}
+.settleMain .settleCont .contDiv p span{ margin-left:15px;}
+.settleMain .settleCont .contDiv p input{ height:24px; 
+	line-height:24px;
+	vertical-align:middle; 
+	color:#999;}
+.settleMain .settleCont .contDiv p input.add{ width:200px;  
+	padding:0px 5px; }
+.settleMain .settleCont .contDiv p em{ font-style:normal; 
+	color:#fe4700; 
+	font-size:12px; 
+	margin-left:15px;}
+.settleMain .settleCont p.allCho input{ vertical-align:middle; 
+	margin-right:5px;}
+.settleMain .settleCont .tabListSettle{ width:100%; 
+margin:10px 0px 20px 0px;}
+.settleMain .settleCont .tabListSettle td.tag{ position:relative;}
+.settleMain .settleCont .tabListSettle td.tag i{ font-style:normal; position:absolute; display:block; top:0px;right:0px; background-color:#e36534; color:#fff; line-height:16px; padding:0px 3px;}
+.settleMain .settleCont .tabListSettle td input{ vertical-align:middle; margin:0px 10px 0px 5px ;}
+.settleMain .settleCont .tabListSettle td{ border:1px solid #ccc; padding:10px;}
+.settleMain .settleCont .tabListSettle td span.sum{ font-size:12px; color:#e0541e; font-weight:normal; display:block;}
+.settleMain .settleCont .tabListSettle td a.sum{display: inline-block;border: 1px solid #ddd; background-color:#eee; width: 20px;height: 24px;line-height: 24px;text-align: center;color:#666;text-decoration: none;font-size: 14px;vertical-align: middle;}
+.settleMain .settleCont .tabListSettle td input.sum{border:1px solid #ddd;width: 40px;height: 24px;line-height: 24px;display: inline-block;text-align: center;font-size: 14px;vertical-align: middle; margin:0px; border-left:none; border-right:none;}
+.settleMain .settleCont .tabListSettle thead td{ background-color:#eee; height:28px; line-height:28px; color:#444; font-size:12px; padding:0px 5px;}
+.settleMain .settleCont .tabListSettle thead td span{ color:#e0541e; font-weight:bold;}
+.settleMain .settleCont .tabListSettle thead td em.directMail{padding: 3px 8px; background:#8a36e0; color: #fff; border-radius:5px; margin-left:8px;}
+.settleMain .settleCont .tabListSettle tbody .divGoods{ float:left; width:auto; position:relative;}
+.settleMain .settleCont .tabListSettle tbody .divGoods span.none{ color:#444; margin:20px 5px 0px 0px; display:inline-block; font-size:12px; font-weight:normal;}
+.settleMain .settleCont .tabListSettle tbody .divGoods input{ margin:15px 10px 0px 0px;}
+.settleMain .settleCont .tabListSettle tbody .divGoods i{ font-style:normal; background:url(../img/settlePic.gif) -98px -167px; width:23px;height:23px; display:block; margin:15px 10px 0px 0px;}
+.settleMain .settleCont .tabListSettle tbody p img{ width:50px; height:50px; overflow:hidden; border:1px solid #bbb;}
+.settleMain .settleCont .tabListSettle tbody p.p1{ padding-left:15px; line-height:16px; max-height:32px; overflow:hidden; color:#444; width:480px;}
+.settleMain .settleCont .tabListSettle tbody p.car{ width:360px;}
+.settleMain .settleCont .tabListSettle tbody p.widthP1{ width:445px;}
+.settleMain .settleCont .tabListSettle tbody p.child{ width:340px;}
+.settleMain .settleCont .tabListSettle tbody p.p1 em{ color:#e52100; font-style:normal;}
+.settleMain .settleCont .tabListSettle tbody p.p1 a{ color:#444; }
+.settleMain .settleCont .tabListSettle tbody p.p1 a:hover{ text-decoration:underline;}
+.settleMain .settleCont .tabListSettle tbody p.p2{ padding-left:15px; line-height:16px; height:16px; overflow:hidden; color:#999; margin-top:8px;}
+.settleMain .settleCont .tabListSettle tbody span{ font-family:Verdana, Geneva, sans-serif; color:#444; font-size:14px; font-weight:bold;}
+.settleMain .settleCont .tabListSettle tbody span.red{ color:#e52100;}
+.settleMain .settleCont .tabListSettle tbody span.gray{ color:#999; display:block; text-decoration:line-through; font-size:12px; font-weight:normal;}
+.settleMain .settleCont .tabListSettle tbody span.gray1{ color:#999; display:block; text-decoration:none; font-size:14px; }
+
+.settleMain .settleCont .tabListSettle tfoot td{ border:none; text-align:left; font-size:12px; color:#444; line-height:20px; padding:0px;}
+.settleMain .settleCont .tabListSettle tfoot td span{ font-family:Verdana, Geneva, sans-serif; font-size:12px; padding:0 3px;color:#e52100;}
+
+.settleMain .settleCont .orderMain{float:right; width: 340px;}
+.settleMain .settleCont .orderMain .orderList{ display:block; height:24px;}
+.settleMain .settleCont .orderMain .orderList span{ float:left; width:250px; text-align:right; line-height:24px; color:#444;}
+.settleMain .settleCont .orderMain .orderList span i{ background:url(../img/userHeadPic.png) no-repeat -265px -140px; width:15px; height:15px; vertical-align: middle;
+margin-right: 5px; display:inline-block;}
+.settleMain .settleCont .orderMain .orderList .notesWin {border: 1px solid #eee;padding: 5px;*padding:5px 5px 2px;position: absolute;color: #c97070;line-height: 16px;font-size: 12px;font-weight: normal;top: 0px;display: none; background:#fff; white-space:nowrap; right: 178px;}
+.settleMain .settleCont .orderMain .orderList em{ font-style:normal; font-size:14px; font-family:Verdana, Geneva, sans-serif;line-height:24px; color:#444; width:90px; text-align:right; float:right; display:inline-block;}
+.settleMain .settleCont .orderMain .orderList em.red{ color:#e52100;}
+
+.settleMain .settleCont .tabListSettle tr.none{ background-color:#f0f0f0; color:#999;}
+.settleMain .settleCont .tabListSettle tbody tr.none p.p1 a,.settleMain .settleCont .tabListSettle tbody tr.none p.p1 em,.settleMain .settleCont .tabListSettle tbody tr.none span{ color:#999;}
+
+.settleMain .settleCont .peopleId {padding-left: 20px; position: relative;}
+.settleMain .settleCont .peopleId li{display: block; overflow:hidden; line-height:28px; padding:8px 0;}
+.settleMain .settleCont .peopleId .grayTxt{color: #999;}
+.settleMain .settleCont .peopleId li .s1{display: block;float: left; min-width:97px; padding-right: 4px; text-align: right; font-size: 12px; color: #222222;}
+.settleMain .settleCont .peopleId li em{ padding-left:15px; color: #666;}
+.settleMain .settleCont .peopleId li .red{color: #fe4700;}
+.settleMain .settleCont .peopleId li input.ptTxt{ padding: 3px; color: #999;}
+.settleMain .settleCont .peopleId li .fl{float: left;}
+.settleMain .settleCont .peopleId li .s2{*border:1px solid #e0e0e0; position: relative; margin-left: 5px; float: left;}
+.settleMain .settleCont .peopleId li .s2 .objectTag{position: absolute; left:0px; top: 0px; display: block; width: 100%; height: 100%; opacity: 0;filter:alpha(opacity=0); *width:75px;}
+.settleMain .settleCont .peopleId li input.upbtn{border: 1px solid #e0e0e0;background: #f3f3f3; line-height:26px;  padding:0 15px; outline: none; color: #666;*border: none; }
+.settleMain .settleCont .peopleId li input.upbtn:active{background:#eee;}
+ 
+
+.settleMain .settleCont .tabListSettle td.saleTd{padding:3px;}
+.settleMain .settleCont .tabListSettle td.saleTd div{ background:#e0f2f1; border-radius:5px;height:28px; line-height:28px; color:#00a5b1;}
+.settleMain .settleCont .tabListSettle td.saleTd div em{ display:inline-block;font-style: normal; background:#6bcbd2; line-height:20px; padding:0px 8px; height:20px; text-align:center; color:#fff; font-size:12px; margin:4px 8px; float:left; border-radius:5px;}
+.settleMain .settleCont .tabListSettle td.saleTd div span{display:inline-block; border:1px solid #74ced4; background:#fff; line-height:20px; padding:0px 4px; height:20px; text-align:center; color:#74ced4; font-size:12px; margin:3px 20px; font-weight:normal;}
+.settleMain .settleCont .tabListSettle thead td span.saleBox{ background:url(../img/car_yhBg.png) no-repeat; height:20px; display:inline-block; padding-left:16px;vertical-align:-1px;line-height: 20px; margin-left:30px; color:#ff4500;cursor:pointer;}
+.settleMain .settleCont .tabListSettle thead td span.saleBox em.up{ background:url(../img/car_yhBg.png) no-repeat -290px -2px; width:10px; height:20px; display: inline-block; vertical-align: middle;}
+.settleMain .settleCont .tabListSettle thead td span.saleBox em.down{ background:url(../img/car_yhBg.png) no-repeat -270px -2px; width:10px; height:20px;  display: inline-block; vertical-align: middle;}
+.settleMain .settleCont .tabListSettle thead td .saleBoxMain{ position:absolute; border:1px solid #ff5212;width:320px; padding:5px 10px; background:#fff;top:30px; left:30px; display:none; z-index:9; }
+.settleMain .settleCont .tabListSettle thead td i{ background:url(../img/car518.png) no-repeat -58px -61px; width:7px; height:5px; position:absolute; top:-5px; left: 30px;}
+.settleMain .settleCont .tabListSettle thead td .clo{ background:url(../img/car518.png) no-repeat -89px -29px; width:11px; height:11px; position:absolute; top:4px; right: 4px; cursor:pointer;}
+.settleMain .settleCont .tabListSettle thead td .saleBoxMain p{ margin-bottom:5px; color:#444;}
+.settleMain .settleCont .tabListSettle thead td .saleBoxMain p.pT{ height:24px; line-height:24px; text-indent:8px; }
+.settleMain .settleCont .tabListSettle thead td .saleBoxMain p.pT span{ color:#f53900;}
+.settleMain .settleCont .tabListSettle thead td .saleBoxMain p.pL{ height:24px; line-height:24px; background:#ffe4d9; border-radius:15px; padding:0px 8px; color:#ff4500;}
+.settleMain .settleCont .tabListSettle thead td .saleBoxMain p.pL span{ float:right; color:#666; font-weight:normal;}
+.settleMain .settleCont .tabListSettle thead td .saleBoxMain p.pL a{color:#ff4500;}
+.settleMain .settleCont .tabListSettle td.saleTd div i{ color:#f53900;}
+
+.settleMain .settleCont .tabListSettle td.listTd{ padding:0px;}
+.settleMain .settleCont .tabListSettle td.listTd li{ float:left; width:169px; padding:10px; border:1px solid #fff; text-align:center; position:relative;}
+.settleMain .settleCont .tabListSettle td.listTd li.last{ float:right;}
+.settleMain .settleCont .tabListSettle td.listTd li:hover{ border:1px solid #ffd6c9;}
+.settleMain .settleCont .tabListSettle td.listTd li:hover .addgood{display:block !important;}
+.settleMain .settleCont .tabListSettle td.listTd li:hover .bmztj{display:block !important;}
+.settleMain .settleCont .tabListSettle td.listTd li.none:hover{ border:1px solid #eee;}
+.settleMain .settleCont .tabListSettle td.listTd li img{ width:150px; height:150px;}
+.settleMain .settleCont .tabListSettle td.listTd li p{ width:160px; height:36px; line-height:18px; color:#444; overflow:hidden; margin:5px 0px;}
+.settleMain .settleCont .tabListSettle td.listTd li.none p{ color:#999;}
+.settleMain .settleCont .tabListSettle td.listTd li p i{ color:#f53900;}
+.settleMain .settleCont .tabListSettle td.listTd li.none p i{ color:#999;}
+.settleMain .settleCont .tabListSettle td.listTd li span.s1{ font-size:14px; font-weight:bold; font-family:Verdana, Geneva, sans-serif; color:#f53900; margin-right:8px;}
+.settleMain .settleCont .tabListSettle td.listTd li.none span.s1{ color:#999;}
+.settleMain .settleCont .tabListSettle td.listTd li span.s2{ color:#666; color:#999; text-decoration:line-through; font-weight:normal; font-size:12px;}
+.settleMain .settleCont .tabListSettle td.listTd li .btn{ text-align:center; position:absolute; width:120px; height:26px; line-height:26px; border-radius:3px; background:#f53900; bottom:5px; display:none; left:30px; color:#fff; font-size:14px; cursor:pointer;}
+.settleMain .settleCont .tabListSettle td.listTd li .none{background:#ddd; color:#333; cursor:default;}
+.settleMain .settleCont .tabListSettle td.listTd li.none img
+{-webkit-filter: grayscale(100%); 
+-moz-filter: grayscale(100%); 
+-ms-filter: grayscale(100%); 
+-o-filter: grayscale(100%); 
+filter: grayscale(100%); 
+filter: gray; }
+.settleMain .settleCont .tabListSettle td.listTd li.none .noneImg{ position:absolute; background:url(../img/noneImg.png) no-repeat; z-index:8;width:135px; height:78px; top:50px; left:30px;}
+
+.settleMain .settleCont .tabListSettle .saleGoods{ border:1px solid #c1e1de;}
+.settleMain .settleCont .tabListSettle .saleGoods td{ background:#e6f4f5; border:none; padding:5px;}
+
+.settleMain .settleCont .tabListSettle tbody .saleGoods p img{ width:42px; height:42px; border:1px solid #b7e4df;}
+.settleMain .settleCont .tabListSettle tbody .saleGoods .tit{float: left; vertical-align: middle;margin-top: 15px; color:#00a5b0; margin-right:5px;}
+.settleMain .settleCont .tabListSettle tbody .saleGoods input{ margin: 17px 5px 0px 5px;}
+.settleMain .settleCont .tabListSettle tbody .saleGoods p.car{ width:300px; height:18px; overflow:hidden; margin-top:7px; padding-left:8px;}
+.settleMain .settleCont .tabListSettle tbody .saleGoods p.p2{ margin-top:2px; padding-left:8px;}
+.settleMain .settleCont .tabListSettle tbody .saleGoods p.p1 a{ color:#6d686c;}
+
+
+
+.carAccount{ position:relative; height:45px;}
+.carAccount .carAccountMain{ position:absolute; width:1000px; left:-20px; background-color:#f0f0f0; height:45px; top:0px;}
+.carAccount .carAccountMain .accountL{ float:left;}
+.carAccount .carAccountMain .accountL span{ display:inline-block;padding-left:30px; line-height:45px;}
+.carAccount .carAccountMain .accountR{ float:right;}
+.carAccount .carAccountMain .accountL span input{ vertical-align:middle; margin-right:5px;}
+.carAccount .carAccountMain .accountR span{ color:#444; padding-right:15px; display:inline-block;}
+.carAccount .carAccountMain .accountR span i{ color:#e52100; font-family:Verdana, Geneva, sans-serif; font-style:normal; font-size:13px;}
+.carAccount .carAccountMain .accountR span em{ color:#e52100; font-family:Verdana, Geneva, sans-serif; font-style:normal; font-size:20px; font-weight:bold; vertical-align:middle;}
+.carAccount .carAccountMain .accountR input{ display:inline-block; width:140px; height:45px;  background-color:#cf2e13; text-align:center; line-height:45px; color:#fff;font-family:Microsoft Yahei,"微软雅黑"; font-size:17px; border:none; cursor:pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
